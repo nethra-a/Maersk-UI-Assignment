@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: #EFEFEF;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.left-container {
+    width: 80%;
+}
+
+.right-container {
+    width: 20%;
+}
+
+#blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.each-block {
+    height: 200px;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: white;
+}
+
+#block1, #block3 {
+    background-color: #2B8EAD;
+}
+
+#block0, #block7 {
+    background-color: #6F98A8;
+}
+
+#block5,#block6 {
+    background-color: #BFBFBF;
+}
+
+#block2,#block4,#block8 {
+    background-color: #2F454E;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    background-color: #EFEFEF;
+    width: 80%;
+    margin: auto;
+    height: 3rem;
+    font-style: italic;
+}
+
+.button {
+    height: 70px;
+    width: 80%;
+    background-color: #72C3DC;
+    box-shadow: 3px 5px #2B8EAD;
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+/* For Mobile and ipad screen width less than 960px */
+@media screen and (max-width: 960px) {
+    .container {
+      flex-direction: column-reverse;
+      background-color: white;
+    }
+
+    .right-container {
+        width: 100%;
+        display: flex;
+    }
+
+    .button {
+        height: 45px;
+    }
+
+    .left-container, .each-block {
+        width: 100%;
+    }
+
+    .each-block {
+        height: 30px;
+        background-color: #EFEFEF !important;
+        color: #000000;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #block1, #block3 {
+        border-left: 5px #2B8EAD solid;
+    }
+    
+    #block0, #block7 {
+        border-left: 5px #6F98A8 solid;
+    }
+    
+    #block5,#block6 {
+        border-left: 5px #BFBFBF solid;
+    }
+    
+    #block2,#block4,#block8 {
+        border-left: 5px #2F454E solid;
+    }
+
+    .footer {
+        background-color: white;
+    }
+
+    .title {
+        background-color: #000;
+        color: white;
+        height: 30px;
+        align-items: center;
+    }
+
+  }
